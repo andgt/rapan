@@ -67,24 +67,25 @@
     </header>
   <main class="main">
     <section class="promo">
-      <div class="container">
-        <h1 class="main__title">
-          <span>Подарите себе</span>
-          <span>незабываемый ужин</span>
-          <span>на побережье Чёрного моря</span>
+      <div class="container promo__container">
+        <div class="promo__text-wrapper">
+          <h1 class="main__title">
+          <span class="main__title-text">Подарите себе</span>
+          <span class="main__title-text main__title-text--second">незабываемый ужин</span>
+          <span class="main__title-small">на побережье Чёрного моря</span>
         </h1>
-        <p class="promo__description">Блюда европейской кухни, приготовленные исключительно из свежих крымских продуктов</p>
-        <div class="button">
-          <a class="button__main" href="#">Забронировать столик</a>
-          <a class="button__watch" href="#">Смотреть меню</a>
+          <p class="promo__description">Блюда европейской кухни, приготовленные исключительно из свежих крымских продуктов</p>
         </div>
-        <a class="button__modal" href="#">Заказать доставку еды на дом</a>
+        <div class="button-promo">
+          <a class="button button__main" href="#">Забронировать столик</a>
+          <a class="button button__watch" href="#">Смотреть меню</a>
+        </div>
         <div class="advantages">
           <ul class="advantages__list">
             <li class="advantages__item">
               <article class="advantages__card">
                 <div class="advantages__img-wrapper">
-                  <img class="advantages__img" src="#" width="" height="" alt="">
+                  <img class="advantages__img" src="img/all/advantages-promo-1.png" width="100" height="159" alt="Преимущества">
                 </div>
                 <h2 class="advantages__title">Свежие продукты</h2>
                 <p class="advantages__description">При приготовлении блюд мы используем только свежие крымские овощи и продукты.</p>
@@ -93,7 +94,7 @@
             <li class="advantages__item">
               <article class="advantages__card">
                 <div class="advantages__img-wrapper">
-                  <img class="advantages__img" src="#" width="" height="" alt="">
+                  <img class="advantages__img" src="img/all/advantages-promo-2.png" width="165" height="117" alt="Преимущества">
                 </div>
                 <h2 class="advantages__title">Летняя терраса</h2>
                 <p class="advantages__description">Комфортабельная и уютная веранда на 30 посадочных мест подарит незабываемый вечер и украсит любое мероприятие.</p>
@@ -102,13 +103,20 @@
             <li class="advantages__item">
               <article class="advantages__card">
                 <div class="advantages__img-wrapper">
-                  <img class="advantages__img" src="#" width="" height="" alt="">
+                  <img class="advantages__img" src="img/all/advantages-promo-3.png" width="155" height="155" alt="Преимущества">
                 </div>
                 <h2 class="advantages__title">Панорамный вид</h2>
                 <p class="advantages__description">Скрипка, пианино, гитара и  прочие музыкальные инструменты, играют для вас в нашем ресторане  каждый вечер.</p>
               </article>
             </li>
           </ul>
+        </div>
+        <div class="promo__delivery">
+          <div class="promo__delivery-wrapper"></div>
+          <a class="button__delivery" href="#">
+            <h2 class="button__delivery-text">Заказать доставку еды на дом</h2>
+            <img class="button__delivery-img" src="img/icon/phone-call-button.svg" width="22" height="22" alt="Иконка вызова"></img>
+          </a>
         </div>
       </div>
     </section>
@@ -348,7 +356,7 @@
         <ul class="delivery__list">
           <li class="delivery__item">
             <div class="delivery__card">
-              <a class="button__modal" href="#">Заказать доставку еды на дом</a>
+              <a class="button__delivery" href="#">Заказать доставку еды на дом</a>
               <h3 class="delivery__step">Заявка на сайте</h3>
               <p class="delivery__clarification">Вы оставляете заявку на нашем сайте</p>
             </div>
@@ -558,7 +566,7 @@
             <div class="footer__dev">
               <p class="footer__info-text footer__dev-text">Сделано в</p>
               <a class="footer__dev-logo" href="#">
-                <img src="img/logo-sheer.svg" width="50" height="21" alt="Логотип веб-студии Sheer">
+                <img src="img/all/logo-sheer.svg" width="50" height="21" alt="Логотип веб-студии Sheer">
                 <span class="visually-hidden">Логотип веб-студии Sheer</span>
               </a>
             </div>
@@ -570,5 +578,8 @@
       </button>
   </footer>
   <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="lettering.js-master/jquery.lettering.js"></script>
+  <script src="js/lettering.js"></script>
 </body>
 </html>

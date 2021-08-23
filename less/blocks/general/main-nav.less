@@ -1,11 +1,12 @@
 .main-nav {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   width: 100%;
   max-width: 400px;
   .offset(0; 0);
   transition: 0.7s ease;
+  z-index: 2;
 }
 
 .main-nav--closed.main-nav {
@@ -78,6 +79,7 @@
   &:hover,
   &:focus {
     transform: none;
+    background-color: @green4;
   }
 
   @media (min-width: @desktop-width) {

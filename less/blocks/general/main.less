@@ -1,3 +1,28 @@
-.main--index {
-  padding-top: 100px;
+.main__title {
+  display: flex;
+  flex-direction: column;
+  .offset(0; 0);
+  color: @grey;
+}
+
+.main__title-text {
+  font-weight: 800;
+  .typography(28px; 1.2);
+  text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 48px;
+  }
+}
+
+.main__title-text--second {
+  color: @green;
+}
+
+.main__title-small {
+  .typography(16px; 1.2);
+
+  @media (min-width: @desktop-width) {
+    font-size: 40px;
+  }
 }

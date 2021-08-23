@@ -29,3 +29,7 @@ let menuFixed = function() {
     headerMenu.classList.remove("header__fixed");
   }
 };
+
+window.onscroll = function() {
+  menuFixed();
+};
