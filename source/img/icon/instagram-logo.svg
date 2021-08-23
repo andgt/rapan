@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 440.8 440.8" style="enable-background:new 0 0 440.8 440.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+</style>
+<g>
+	<g>
+		<radialGradient id="SVGID_1_" cx="14.1151" cy="465.4518" r="589.4543" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FEC053"/>
+			<stop  offset="0.3273" style="stop-color:#F2203E"/>
+			<stop  offset="0.6485" style="stop-color:#B729A8"/>
+			<stop  offset="1" style="stop-color:#5342D6"/>
+		</radialGradient>
+		<path class="st0" d="M306.7,425.4H129.1c-64.7,0-117.3-52.6-117.3-117.3V130.5c0-64.7,52.6-117.3,117.3-117.3h177.6
+			c64.7,0,117.3,52.6,117.3,117.3v177.6C424,372.8,371.4,425.4,306.7,425.4z M129.1,48.6c-45.2,0-82,36.8-82,82v177.6
+			c0,45.2,36.8,82,82,82h177.6c45.2,0,82-36.8,82-82V130.5c0-45.2-36.8-82-82-82H129.1z"/>
+	</g>
+	<g>
+		<radialGradient id="SVGID_2_" cx="14.115" cy="465.4522" r="589.456" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FEC053"/>
+			<stop  offset="0.3273" style="stop-color:#F2203E"/>
+			<stop  offset="0.6485" style="stop-color:#B729A8"/>
+			<stop  offset="1" style="stop-color:#5342D6"/>
+		</radialGradient>
+		<path class="st1" d="M217.9,324.9c-58.2,0-105.5-47.3-105.5-105.5c0-58.2,47.3-105.5,105.5-105.5s105.5,47.3,105.5,105.5
+			C323.4,277.5,276.1,324.9,217.9,324.9z M217.9,149.1c-38.7,0-70.2,31.5-70.2,70.2s31.5,70.2,70.2,70.2s70.2-31.5,70.2-70.2
+			S256.6,149.1,217.9,149.1z"/>
+	</g>
+	<g>
+		<radialGradient id="SVGID_3_" cx="14.1126" cy="465.4416" r="589.4497" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FEC053"/>
+			<stop  offset="0.3273" style="stop-color:#F2203E"/>
+			<stop  offset="0.6485" style="stop-color:#B729A8"/>
+			<stop  offset="1" style="stop-color:#5342D6"/>
+		</radialGradient>
+		<path class="st2" d="M353.3,107.7c0,14-11.4,25.4-25.4,25.4c-14,0-25.4-11.4-25.4-25.4c0-14,11.4-25.4,25.4-25.4
+			C342,82.4,353.3,93.7,353.3,107.7z"/>
+	</g>
+</g>
+</svg>

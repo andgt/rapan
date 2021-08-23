@@ -1,0 +1,33 @@
+.page {
+  max-width: 1920px;
+  height: 100%;
+  .offset(0; 0 auto);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  align-content: start;
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0;
+  font-family: "Geometria", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  .typography(14px; 21px);
+  overflow: hidden;
+  background-image: url("../img/all/background.jpg");
+  background-repeat: repeat-y;
+  background-size: 1920px 720px;
+}
+
+.page__modal-opened {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}

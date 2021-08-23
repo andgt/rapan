@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  .offset(11px 23px 12px 26px; 0);
+  font-weight: 700;
+  .typography(14px; 17px);
+  color: @white;
+  letter-spacing: 0.08em;
+  background-color: transparent;
+  border: 0;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 0 8px @white);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 21px 33px 22px 36px;
+  }
+}

@@ -1,0 +1,150 @@
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 400px;
+  .offset(0; 0);
+  transition: 0.7s ease;
+}
+
+.main-nav--closed.main-nav {
+  width: 0;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .offset(0; 0);
+  list-style-type: none;
+  text-align: center;
+  background-color: @green3;
+  transform: translateY(-500px);
+  transition: 0.3s ease;
+}
+
+.main-nav__item {
+  transition: all 0.7s ease;
+}
+
+.main-nav__link {
+  position: relative;
+  display: inline-block;
+  .offset(5px; 0);
+  .typography(16px; 20px);
+  color: @grey;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+
+  &:hover,
+  &:focus {
+    color: @green1;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 10px;
+    font-weight: 600;
+    .typography(16px; 20px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .typography(20px; 24px);
+  }
+}
+
+.main-nav__button-toggle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  .offset(0; 0);
+  width: 30px;
+  height: 30px;
+  background-color: @green;
+  box-shadow: 0 6px 9px 0 @white1;
+  transition: 0.4s ease;
+  z-index: 2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &:hover,
+  &:focus {
+    transform: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.main-nav--closed .main-nav__button-toggle::before {
+  top: 13px;
+  left: 7px;
+  width: 16px;
+  height: 2px;
+  background-color: @white;
+  box-shadow: 0 -4px @white, 0 4px @white;
+  transition: all 0.4s ease;
+
+  @media (min-width: @desktop-width) {
+    top: 19px;
+    left: 12px;
+  }
+}
+
+.main-nav--opened .main-nav__button-toggle {
+  background-color: transparent;
+  box-shadow: initial;
+
+  &:hover,
+  &:focus {
+    filter: initial;
+  }
+
+  &::before,
+  &::after {
+    top: 13px;
+    left: 5px;
+    width: 19px;
+    height: 2px;
+    background-color: @grey;
+    transition: all 0.4s ease;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  visibility: hidden;
+  transition: 0.7s ease;
+}
+
+.main-nav--opened .main-nav__list {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  padding: 20px 0;
+  transition: 0.7s ease;
+  margin-bottom: 20px;
+  transform: translateY(0);
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 0;
+  }
+}
