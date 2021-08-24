@@ -1,0 +1,38 @@
+.menu {
+  .offset(0; 62px 0 25px 0);
+  background-image: url("../img/desktop/menu-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu__description {
+  font-weight: 700;
+  .typography(24px; 1.2);
+  color: @black1;
+}
+
+.menu__list {
+  .offset(0; 0);
+  list-style: none;
+}
+
+.menu__item {
+  position: relative;
+  padding-left: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: @green;
+  }
+}
+
+.menu__text {
+  font-weight: 500;
+  .typography(18px; 1.2);
+}
