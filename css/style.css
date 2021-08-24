@@ -172,6 +172,7 @@ a {
 .main__subtitle {
   margin: 0;
   padding: 0;
+  font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
   color: #4b4b53;
@@ -193,6 +194,10 @@ a {
 .main__subtitle--gallery {
   margin-bottom: 39px;
   text-align: center;
+}
+.main__subtitle--menu {
+  font-size: 48px;
+  color: #28292d;
 }
 .button {
   display: inline-block;
@@ -241,6 +246,7 @@ a {
   }
 }
 .button__main {
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   background-color: #4d661a;
@@ -265,6 +271,7 @@ a {
   opacity: 0.7;
 }
 .button__watch {
+  font-weight: 700;
   color: #4b4b53;
   border: 1px solid #8f939e;
 }
@@ -1319,8 +1326,59 @@ a {
   position: relative;
 }
 .gallery {
+  position: relative;
   margin: 0;
   padding: 61px 0 40px 0;
+  z-index: 5;
+}
+.gallery::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 455px;
+  height: 205px;
+  background-image: url("../img/desktop/gallery-bg.png");
+  background-size: 455px 205px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.menu {
+  margin: 0;
+  padding: 62px 0 25px 0;
+  background-image: url("../img/desktop/menu-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu__description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #28292d;
+}
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu__item {
+  position: relative;
+  padding-left: 17px;
+}
+.menu__item::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #4d661a;
+}
+.menu__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=style.css.map */

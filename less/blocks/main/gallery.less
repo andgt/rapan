@@ -1,3 +1,18 @@
 .gallery {
+  position: relative;
   .offset(0; 61px 0 40px 0);
+  z-index: 5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 455px;
+    height: 205px;
+    background-image: url("../img/desktop/gallery-bg.png");
+    background-size: 455px 205px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
