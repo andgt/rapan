@@ -1,0 +1,129 @@
+.catalog {
+  padding: 35px 0 20px 0;
+  background-color: @green3;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 0 50px 0;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 276px 1fr;
+    column-gap: 29px;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 26px 10px;
+  .offset(0 0 20px 0; 0);
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    column-gap: 33px;
+    margin-bottom: 40px;
+  }
+}
+
+.catalog__item {
+  display: flex;
+  align-items: stretch;
+}
+
+.catalog__card {
+  width: 100%;
+  background-color: @white;
+  border-radius: 8px;
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px 5px @green4;
+    transform: scale(1.005);
+  }
+}
+
+.catalog__img-wrapper {
+  height: 210px;
+  margin-bottom: 22px;
+}
+
+.catalog__img-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.catalog__text-link {
+  display: inline-block;
+  min-height: 42px;
+}
+
+.catalog__card-text {
+  display: flex;
+  flex-direction: column;
+  min-height: 169px;
+  .offset(0; 0 10px 22px 10px);
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px 22px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: auto;
+  }
+}
+
+.catalog__card-title {
+  font-weight: 700;
+  .offset(0 0 16px 0; 0);
+  .typography(18px; 1.2);
+  color: @grey;
+  text-align: center;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: @green;
+  }
+}
+
+.catalog__card-weight {
+  position: relative;
+  .offset(auto 0 13px 0; 0 0 13px 0);
+  .typography(16px; 21px);
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: @green7;
+  }
+}
+
+.catalog__card-price {
+  .offset(0; 0);
+  font-weight: 700;
+  .typography(24px; 21px);
+  text-align: center;
+  color: @grey;
+}
