@@ -1,0 +1,140 @@
+.form {
+  position: relative;
+  .offset(0; 20px);
+  background-color: @white;
+
+  @media (min-width: @desktop-width) {
+    padding: 117px 50px 0 58px;
+  }
+}
+
+.form__data {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__contacts-data {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 25px;
+    column-gap: 24px;
+  }
+}
+
+.form__order-data {
+  @media (min-width: @desktop-width) {
+    column-gap: 16px;
+    margin-bottom: 88px;
+  }
+}
+
+.form__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .offset(0 0 15px 0; 0);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__inner--contacts {
+  @media (min-width: @desktop-width) {
+    width: 278px;
+  }
+}
+
+.form__inner--data {
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
+}
+
+.form__footer {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: -15px;
+  }
+}
+
+.form__inner--policy {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.form__label {
+  .offset(0; 0);
+  .typography(14px; 1.2);
+  color: @grey2;
+}
+
+.form__input,
+.form__select {
+  .offset(0; 18px 17px 19px 17px);
+  .typography(14px; 14px);
+  color: @black1;
+  background-color: @grey7;
+  border: 0;
+  border-radius: 3px;
+  transition: 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: @grey5;
+  }
+}
+
+.form__select--dropdown {
+  appearance: none;
+}
+
+.form__inner--submit {
+  width: 100%;
+  max-width: 246px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form__submit {
+  width: 100%;
+  background-color: @green;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+}
+
+.wpcf7-list-item-label {
+  position: relative;
+  color: @grey2;
+  padding-left: 15px;
+  .typography(13px; 1.2);
+}
+
+.wpcf7-list-item-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -11px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid @grey;
+  border-radius: 50%;
+  background-image: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='8px' height='5px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 0.56 0.35' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%234D661A;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Capa_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg id='_1003286096'%3E%3Cg%3E%3Cpath class='fil0' d='M0.55 0.01c-0.01,-0.01 -0.03,-0.01 -0.05,0l-0.29 0.27 -0.15 -0.14c-0.02,-0.02 -0.04,-0.02 -0.05,0 -0.01,0.01 -0.01,0.03 0,0.04l0.18 0.16c0,0.01 0.01,0.01 0.02,0.01 0.01,0 0.02,0 0.02,-0.01l0.32 -0.29c0.01,-0.01 0.01,-0.03 0,-0.04z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: 8px 5px;
+  background-position: center center;
+}
