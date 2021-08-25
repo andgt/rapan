@@ -392,57 +392,63 @@
       <div class="container">
         <div class="reserve__inner">
         <div class="form wpcf7">
-          <form class="form" action="#" method="POST">
-            <h2 class="form__title">Забронировать столик</h2>
-            <div class="form__contacts-data">
-              <div class="form__inner">
-                <label class="visually-hidden" for="name-back-call">Ваше имя</label>
-                <input class="form__input form__input--username" type="text" name="username" id="name-back-call" placeholder="Ваше имя" required>
+          <form class="form__wrapper" action="#" method="POST">
+            <h2 class="main__subtitle main__subtitle--form">Забронировать столик</h2>
+            <div class="form__data form__contacts-data">
+              <div class="form__inner form__inner--contacts">
+                <label class="form__label" for="name-back-call">Ваше имя</label>
+                <input class="form__input form__input--username" type="text" name="username" id="name-back-call" required>
               </div>
-              <div class="form__inner">
-                <label class="visually-hidden" for="phone-number-calculate">Ваш телефон</label>
-                <input class="form__input form__input--phone" type="tel" name="phonecalculate" id="phone-number-calculate" placeholder="+7 (___) ___ - __ - __" pattern="(\+?\d[- .]*){7,13}" required>
-              </div>
-            </div>
-            <div class="form__order-data">
-              <label class="form__label-date form__label-interactive form__order-element">
-                <input type="text" name="date" class="datepicker-here" placeholder="Дата">
-              </label>
-              <label class="form__label-time form__label-interactive form__order-element">
-                <input type="text" name="time" placeholder="Время" id="datetimepicker">
-              </label>
-              <select class="form__select form__select--dropdown form__order-element">
-                <option class="form__select-option">Кол-во человек</option>
-                <option class="form__select-option">1</option>
-                <option class="form__select-option">2</option>
-                <option class="form__select-option">3</option>
-                <option class="form__select-option">4</option>
-                <option class="form__select-option">5</option>
-                <option class="form__select-option">6</option>
-              </select>
-            </div>
-            <p class="form__description">* отмена бронирования происходит по звонку в ресторан, минимум за час</p>
-            <div class="form__item form__item--submit">
-              <div class="btn__wrap btn__wrap--grad">
-                <input class="wpcf7-form-control wpcf7-submit xbtn xbtn--grad button form__modal-submit form__modal-order" type="submit" value="Забронировать">
+              <div class="form__inner form__inner--contacts">
+                <label class="form__label" for="phone-number">Ваш телефон</label>
+                <input class="form__input form__input--phone" type="tel" name="phonecalculate" id="phone-number" required>
               </div>
             </div>
-            <div class="form__item">
-              <span class="wpcf7-form-control-wrap accept">
-                <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
-                  <span class="wpcf7-list-item">
-                    <label>
-                      <input type="checkbox" name="accept" value="Я даю согласие на обработку персональных данных" checked="checked">
-                      <span class="wpcf7-list-item-label">Я даю согласие на обработку персональных данных</span>
-                    </label>
+            <div class="form__data form__order-data">
+              <div class="form__inner form__inner--data">
+                <label class="form__label" for="date-field">Дата</label>
+                <input class="form__input datepicker-here" type="text" name="date" id="date-field">
+              </div>
+              <div class="form__inner form__inner--data">
+                <label class="form__label" for="datetimepicker">Время</label>
+                <input class="form__input" type="text" name="time" id="datetimepicker">
+              </div>
+              <div class="form__inner form__inner--data">
+                <label class="form__label" for="form-select">Кол-во человек</label>
+                <select class="form__select form__select--dropdown" id="form-select">
+                  <option class="form__select-option"></option>
+                  <option class="form__select-option">1</option>
+                  <option class="form__select-option">2</option>
+                  <option class="form__select-option">3</option>
+                  <option class="form__select-option">4</option>
+                  <option class="form__select-option">5</option>
+                  <option class="form__select-option">6</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__footer">
+              <div class="form__inner form__inner--submit">
+                <div class="btn__wrap btn__wrap--grad form__btn-wrapper">
+                  <input class="wpcf7-form-control wpcf7-submit xbtn xbtn--grad button form__submit" type="submit" value="Забронировать">
+                </div>
+              </div>
+              <div class="form__inner form__inner--policy">
+                <span class="wpcf7-form-control-wrap accept">
+                  <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input type="checkbox" name="accept" value="Я даю согласие на обработку персональных данных" checked="checked">
+                        <span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span>
+                      </label>
+                    </span>
                   </span>
                 </span>
-              </span>
+              </div>
             </div>
           </form>
         </div>
-        <div class="rserve__img-wrapper">
-          <img class="reserve__img" src="#" width="" height="" alt="">
+        <div class="reserve__img-wrapper">
+          <img class="reserve__img" src="img/desktop/form-img.jpg" srcset="img/desktop/form-img@2x.jpg 2x" width="651" height="521" alt="Резерв столика">
         </div>
         </div>
       </div>
