@@ -28,6 +28,7 @@
 }
 
 .main__subtitle {
+  position: relative;
   .offset(0; 0);
   font-weight: 700;
   .typography(25px; 1.2);
@@ -50,9 +51,26 @@
 .main__subtitle--gallery {
   margin-bottom: 39px;
   text-align: center;
+  z-index: 10;
 }
 
 .main__subtitle--menu {
-  font-size: 48px;
+  margin-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 36px;
   color: @black1;
+  text-align: center;
+  z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 74px;
+    font-size: 48px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 420px;
+    font-size: 48px;
+  }
 }

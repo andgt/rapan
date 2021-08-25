@@ -13,3 +13,35 @@ $(document).ready(function() {
     variableWidth: true,
   });
 });
+
+$('.menu__gallery').slick({
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 320,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 1000,
+        }
+    },
+    {
+      breakpoint: 768,
+        settings: "unslick"
+    },
+  ]
+});
+
+$(window).resize(function() {
+  if (window.innerWidth < 768) {
+    $('.menu__gallery').not('.slick-initialized').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 1000
+    })
+  } else {
+      $('.menu__gallery').slick('unslick');
+    }
+});
