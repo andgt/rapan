@@ -1,0 +1,93 @@
+.events {
+  position: relative;
+  .offset(0; 40px 0);
+
+  @media (min-width: @tablet-width) {
+    padding: 116px 0 84px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: 100% 0 / contain no-repeat url("../img/desktop/events-bg-img.jpg");
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 181px;
+      right: 0;
+      width: 964px;
+      height: 777px;
+      background-image: url("../img/desktop/events-bg-figure.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 468px;
+      height: 261px;
+      background-image: url("../img/desktop/events-bg-leaves.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.events__text-container {
+  @media (min-width: @desktop-width) {
+    padding-right: 480px;
+  }
+}
+
+.events__description {
+  position: relative;
+  .offset(0 0 40px 0; 0);
+  font-weight: 700;
+  .typography(16px; 24px);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 75px;
+    .typography(24px; 34px);
+    z-index: 2;
+  }
+}
+
+.events__container {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: minmax(490px, 1fr) minmax(192px, 500px);
+    column-gap: 20px;
+  }
+}
+
+.events__description-link {
+  display: inline-block;
+  position: relative;
+  color: @green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: @green;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    color: @green4;
+
+    &::before {
+      animation: underline 0.9s;
+      background-color: @green4;
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
