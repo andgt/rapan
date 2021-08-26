@@ -7,59 +7,128 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 53px;
   }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/desktop/delivery-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 45% 60%;
+    background-size: cover;
+  }
 }
 
 .delivery__description {
   .offset(0 0 41px 0; 0);
   font-weight: 700;
   .typography(18px; 1.2);
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 61px;
     font-size: 24px;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
 
 .delivery__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 235px);
+  justify-content: center;
+  column-gap: 20px;
   .offset(0; 0);
   list-style: none;
-}
-
-.delivery__card {
-  position: relative;
-  .offset(0; 0);
-}
-
-.delivery__card--active {
-  padding: 94px 15px 16px 15px;
 
   @media (min-width: @tablet-width) {
-    padding: 174px 35px 26px 35px;
+    column-gap: 80px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-content: normal;
+    column-gap: 0;
+    row-gap: 68px;
+    max-width: 855px;
+    margin: 0 0 66px 0;
   }
 }
 
 .delivery__item {
   position: relative;
   counter-increment: num;
+  width: 235px;
+  .offset(0 0 30px 0; 0);
 
   &::before {
     content: "0" counter(num);
     position: absolute;
     top: 0;
     left: 0;
-    width: 33px;
+    width: 39px;
     height: 34px;
     font-family: "Geometria", "Arial", sans-serif;
     font-weight: 700;
     .typography(30px; 26px);
     color: @green;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 239px;
+    margin-right: 74px;
+    margin-bottom: 0;
   }
 }
 
+.delivery__item:nth-child(3),
+.delivery__item:nth-child(5),
+.delivery__item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.delivery__item--active {
+  grid-row: span 2;
+
+  &::before {
+    top: 177px;
+    left: 102px;
+    color: @black1;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 64px;
+  }
+}
+
+.delivery__card {
+  position: relative;
+  .offset(0; 40px 0 0 0);
+  border-radius: 8px;
+}
+
+.delivery__card--active {
+  padding: 90.63829787234043% 14.8936170212766% 11.06382978723404% 14.8936170212766%;
+  color: @black1;
+  text-align: center;
+  background-image: url("../img/all/delivery-card-active-bg.png");
+  background-size: cover;
+  box-shadow: 0 15px 25px 0 @grey3;
+  transition: 0.5s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px 0 @green;
+  }
+}
+
+
 .delivery__title {
-  .offset(0 0 20px; 0);
+  .offset(0 0 14px; 0);
   font-weight: 700;
   .typography(16px; 20px);
 
@@ -74,5 +143,70 @@
 
   @media (min-width: @tablet-width) {
     line-height: 20px;
+  }
+}
+
+.delivery__information {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: 47px;
+  }
+}
+
+.delivery__info-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px 10px;
+  .offset(0; 10px);
+  list-style: none;
+  border-radius: 8px;
+  box-shadow: 0 15px 25px 0 @grey3;
+  background-image: url("../img/all/delivery-info-bg.jpg");
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    padding: 28px 38px 34px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 58px 68px 64px 53px;
+  }
+}
+
+.delivery__info-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 213px;
+  }
+}
+
+.delivery__info-text {
+  .offset(0 0 13px 0; 0);
+  font-weight: 500;
+  .typography(16px; 26px);
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.delivery__info-description {
+  font-weight: 700;
+  .typography(18px; 1.2);
+  color: @black1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+  }
+}
+
+.delivery__info-description--link {
+  transition: 0.3s ease;
+
+  &:hover {
+    color: @green;
   }
 }
