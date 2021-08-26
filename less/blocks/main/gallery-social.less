@@ -1,0 +1,44 @@
+.gallery-social {
+  position: relative;
+  .offset(0; 0);
+  z-index: 8;
+}
+
+.gallery-social__picture-container {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    top: -173px;
+    left: 0;
+    width: 1146px;
+  }
+}
+
+.gallery-social__picture {
+  clip-path: path("M 2.8702919,43.308244 C 49.873592,23.843984 95.925792,4.0075143 187.73269,2.0750843 265.12019,0.37750434 306.06539,25.129904 356.06829,43.308244 l 25.1341,10.42715 89.3125,33.76703 107.875,31.819796 c 39.3402,12.85831 71.47167,19.94967 122.83487,42.42641 58.2156,27.38807 115.3043,59.92771 164.3139,129.40054 36.8135,55.24288 61.5981,118.35075 63.8199,196.21122 -3.6091,121.68372 -47.474,165.77994 -71.5937,199.06147 -34.7374,35.7368 -47.3541,63.87242 -168.5,129.40054 C 576.06609,871.44972 452.39679,879.36043 187.32739,884.29789 89.419192,885.28701 23.703292,863.26921 2.8683919,815.8224 Z");
+}
+
+.gallery-social__img-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 580px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 57px;
+    margin-left: auto;
+  }
+}
+
+.gallery-social__img-wrapper {
+  width: 274px;
+  height: 274px;
+}
+
+.gallery-social__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
