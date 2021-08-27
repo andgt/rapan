@@ -1257,11 +1257,13 @@ a {
   }
 }
 .form__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin: 0 0 15px 0;
   padding: 0;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .form__inner {
