@@ -131,62 +131,365 @@
           <div class="tabs">
             <ul class="tabs__list">
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button button" type="button" data-tab="menu-1">
                   <img class="tabs__img" src="img/icon/tab-1.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Салаты</span>
                 </button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button button" type="button" data-tab="menu-2">
                   <img class="tabs__img" src="img/icon/tab-2.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Закуски</span>
                 </button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button button" type="button" data-tab="menu-3">
                   <img class="tabs__img" src="img/icon/tab-3.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Рыба</span>
                 </button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button tabs__button--active button" type="button" data-tab="menu-4">
                   <img class="tabs__img" src="img/icon/tab-4.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Мясо</span>
                 </button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button button" type="button" data-tab="menu-5">
                   <img class="tabs__img" src="img/icon/tab-5.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Супы</span>
                 </button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button button" type="button" data-tab="menu-6">
                   <img class="tabs__img" src="img/icon/tab-6.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Мангал</span>
                 </button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button button" type="button" data-tab="menu-7">
                   <img class="tabs__img" src="img/icon/tab-7.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Напитки</span>
                 </button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button button" type="button" data-tab="menu-8">
                   <img class="tabs__img" src="img/icon/tab-8.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Десерты</span>
                 </button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button button" type="button">
+                <button class="tabs__button button" type="button" data-tab="menu-9">
                   <img class="tabs__img" src="img/icon/tab-9.svg" width="29" height="30" alt="Иконка таба">
                   <span class="tabs__text">Паста</span>
                 </button>
               </li>
             </ul>
           </div>
-          <div class="catalog__container">
+          <div class="catalog__container menu-1">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Салат с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Салат в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Салат из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Салат с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Салат в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Салат из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="button button__watch button__watch--catalog" type="button">Показать еще</button>
+          </div>
+          <div class="catalog__container menu-2">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Закуска с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Закуска в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Закуска из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Закуска с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Закуска в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Закуска из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="button button__watch button__watch--catalog" type="button">Показать еще</button>
+          </div>
+          <div class="catalog__container menu-3">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Рыба с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Рыба в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Рыба из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Рыба с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Рыба в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Рыба из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="button button__watch button__watch--catalog" type="button">Показать еще</button>
+          </div>
+          <div class="catalog__container catalog__container--active menu-4">
             <ul class="catalog__list">
               <li class="catalog__item">
                 <article class="catalog__card">
@@ -278,6 +581,511 @@
                   <div class="catalog__card-text">
                     <a class="catalog__text-link" href="#">
                       <h3 class="catalog__card-title">Отбивная из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="button button__watch button__watch--catalog" type="button">Показать еще</button>
+          </div>
+          <div class="catalog__container menu-5">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Суп с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Суп в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Суп из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Суп с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Суп в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Суп из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="button button__watch button__watch--catalog" type="button">Показать еще</button>
+          </div>
+          <div class="catalog__container menu-6">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Мангал с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Мангал в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Мангал из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Мангал с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Мангал в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Мангал из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="button button__watch button__watch--catalog" type="button">Показать еще</button>
+          </div>
+          <div class="catalog__container menu-7">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Напиток с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Напиток в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Напиток из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Напиток с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Напиток в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Напиток из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="button button__watch button__watch--catalog" type="button">Показать еще</button>
+          </div>
+          <div class="catalog__container menu-8">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Десерт с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Десерт в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Десерт из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Десерт с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Десерт в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Десерт из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="button button__watch button__watch--catalog" type="button">Показать еще</button>
+          </div>
+          <div class="catalog__container menu-9">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Паста с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Паста в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Паста из свинины на&nbsp;косточке</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">520</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-1@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Паста с корочкой из&nbsp;прованских трав</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">650</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-2@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Паста в глазури из абрикосового джема с яблоком</h3>
+                    </a>
+                    <span class="catalog__card-weight">250 г</span>
+                    <span class="catalog__card-price">720</span>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__card">
+                  <div class="catalog__img-wrapper">
+                    <a class="catalog__img-link" href="#">
+                      <img class="catalog__img" src="https://source.unsplash.com/random" srcset="img/all/catalog-card-3@2x.jpg 2x" width="330" height="210" alt="Изображение меню">
+                    </a>
+                  </div>
+                  <div class="catalog__card-text">
+                    <a class="catalog__text-link" href="#">
+                      <h3 class="catalog__card-title">Паста из свинины на&nbsp;косточке</h3>
                     </a>
                     <span class="catalog__card-weight">250 г</span>
                     <span class="catalog__card-price">520</span>

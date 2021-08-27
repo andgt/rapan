@@ -1450,6 +1450,9 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
     margin: 0;
   }
 }
+.tabs__button--active .tabs__text {
+  color: #6dad65;
+}
 .tabs__text {
   padding: 0 10px 0 28px;
   font-size: 16px;
@@ -2081,6 +2084,12 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
     -moz-column-gap: 29px;
          column-gap: 29px;
   }
+}
+.catalog__container {
+  display: none;
+}
+.catalog__container--active {
+  display: block;
 }
 .catalog__list {
   display: grid;

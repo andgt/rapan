@@ -50,3 +50,36 @@ window.onscroll = function() {
   menuFixed();
   scrollUpButton();
 };
+
+// Табы меню
+
+  let tabMenu = function() {
+    let tabBtn = document.querySelectorAll(".tabs__button");
+    let cardsBlock = document.querySelectorAll(".catalog__container");
+    let tabName;
+
+    tabBtn.forEach(element => {
+      element.addEventListener("click", selectTab);
+    });
+
+    function selectTab(evt) {
+      tabBtn.forEach(element => {
+        element.classList.remove("tabs__button--active");
+      });
+      this.classList.add("tabs__button--active");
+      tabName = this.getAttribute("data-tab");
+      selectTabContent(tabName);
+    }
+
+    function selectTabContent(tabName) {
+      cardsBlock.forEach(element => {
+        if (element.classList.contains(tabName)) {
+          element.classList.add("catalog__container--active");
+        } else {
+          element.classList.remove("catalog__container--active");
+        }
+      });
+    }
+  };
+
+tabMenu();
