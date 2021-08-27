@@ -3,6 +3,17 @@
   flex-wrap: wrap;
 }
 
+.contacts-main--footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+
+  @media (min-width: @desktop-width) {
+    gap: 0;
+  }
+}
+
 .contacts-main__messenger {
   display: flex;
   align-items: flex-start;
@@ -31,6 +42,12 @@
   }
 }
 
+.contacts-main__phone--footer {
+  @media (min-width: @desktop-width) {
+    margin-right: 38px;
+  }
+}
+
 .contacts-main__phone-icon {
   @media (min-width: @tablet-width) {
     display: none;
@@ -40,6 +57,17 @@
 .contacts-main__phone-link {
   @media (min-width: @tablet-width) {
     display: inline-block;
+  }
+}
+
+.contacts-main__phone-link--footer {
+  font-weight: 700;
+  .typography(18px; 21px);
+  color: @white;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: @green4;
   }
 }
 
@@ -81,18 +109,18 @@
 
 .contacts-main__back-call {
   display: none;
+  margin-bottom: auto;
+  padding: 8px 10px;
+  text-align: center;
+  color: @white;
+  box-shadow: 0 6px 9px 0 @white1;
+  background-image: linear-gradient(-81deg, @green1 0%, @green2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
 
   @media (min-width: @tablet-width) {
     display: block;
-    margin-bottom: auto;
-    padding: 8px 10px;
-    text-align: center;
-    color: @white;
-    box-shadow: 0 6px 9px 0 @white1;
-    background-image: linear-gradient(-81deg, @green1 0%, @green2);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
   }
 
   @media (min-width: @desktop-width) {
@@ -104,4 +132,8 @@
     background-image: linear-gradient(-81deg, @green2 0%, @green1);
     transform: scale(1.02);
   }
+}
+
+.contacts-main__back-call--footer {
+  display: block;
 }
