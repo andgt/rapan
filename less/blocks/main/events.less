@@ -3,7 +3,7 @@
   .offset(0; 40px 0);
 
   @media (min-width: @tablet-width) {
-    padding: 116px 0 84px 0;
+    padding: 116px 0 80px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -12,25 +12,27 @@
     &::before {
       content: "";
       position: absolute;
-      top: 181px;
+      top: 281px;
       right: 0;
       width: 964px;
       height: 777px;
       background-image: url("../img/desktop/events-bg-figure.svg");
       background-repeat: no-repeat;
       background-size: cover;
+      z-index: 1;
     }
 
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -100px;
       right: 0;
       width: 468px;
       height: 261px;
       background-image: url("../img/desktop/events-bg-leaves.png");
       background-size: cover;
       background-repeat: no-repeat;
+      z-index: 10;
     }
   }
 }
