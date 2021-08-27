@@ -6,6 +6,7 @@
   <title>Рапаныч</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=fd7c6876-f831-4282-9cb5-f775dd3c2185&width=100%&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body class="page__body">
   <header class="header">
@@ -635,43 +636,61 @@
     <section class="contacts">
         <div class="contacts__map" id="map"></div>
         <div class="container">
-          <div class="contacts__wrapper">
+          <div class="contacts__field">
             <h2 class="visually-hidden">Контакты</h2>
             <ul class="contacts__list">
               <li class="contacts__item contacts__item--1">
-                <span class="contacts__title">Адрес:</span>
-                <address class="contacts__address contacts__text">Пос. Кипарисное, ул. Алуштинская, 18 а</address>
+                <div class="contacts__inner">
+                  <span class="contacts__title">Адрес:</span>
+                  <address class="contacts__address contacts__text">Пос. Кипарисное, ул.&nbsp;Алуштинская, 18&nbsp;а</address>
+                </div>
               </li>
               <li class="contacts__item contacts__item--2">
-                <span class="contacts__title">Телефон:</span>
-                <a class="contacts__phone-link" href="tel:+79786220179">+7 978 622 01 79</a>
+                <div class="contacts__inner">
+                  <span class="contacts__title">Телефон:</span>
+                  <a class="contacts__phone-link contacts__text" href="tel:+79786220179">+7 978 622 01 79</a>
+                </div>
               </li>
               <li class="contacts__item contacts__item--3">
-                <span class="contacts__title">E-mail:</span>
-                <a class="contacts__mail contacts__text" href="mailto:podsolnuhi.restoran@yandex.ru">rapanych@yandex.ru</a>
+                <div class="contacts__inner">
+                  <span class="contacts__title">E-mail:</span>
+                  <a class="contacts__mail contacts__text" href="mailto:podsolnuhi.restoran@yandex.ru">rapanych@yandex.ru</a>
+                </div>
               </li>
               <li class="contacts__item contacts__item--4">
-                <span class="contacts__title">График работы</span>
-                <p class="contacts__schedule contacts__text">Ежедневно, с 9:00 до 23:00</p>
+                <div class="contacts__inner">
+                  <span class="contacts__title">График работы</span>
+                  <p class="contacts__schedule contacts__text">Ежедневно, с 9:00 до 23:00</p>
+                </div>
               </li>
             </ul>
-            <div class="social">
+            <div class="contacts__footer">
+              <div class="social">
               <ul class="social__list">
                 <li class="social__item">
-                  <img class="social__img" src="#" width="" height="" alt="Иконка телеграм">
+                  <a class="social__img-wrapper" href="#" rel="nofollow" target="_blank">
+                    <img class="social__img" src="img/icon/telegram-social.svg" width="29" height="26" alt="Иконка телеграм">
+                  </a>
                 </li>
                 <li class="social__item">
-                  <img class="social__img" src="#" width="" height="" alt="Иконка инстаграм">
+                  <a class="social__img-wrapper" href="#" rel="nofollow" target="_blank">
+                    <img class="social__img" src="img/icon/instagram-social.svg" width="26" height="26" alt="Иконка инстаграм">
+                  </a>
                 </li>
                 <li class="social__item">
-                  <img class="social__img" src="#" width="" height="" alt="Иконка whatsapp">
+                  <a class="social__img-wrapper" href="#" rel="nofollow" target="_blank">
+                    <img class="social__img" src="img/icon/whatsapp-social.svg" width="27" height="28" alt="Иконка whatsapp">
+                  </a>
                 </li>
                 <li class="social__item">
-                  <img class="social__img" src="#" width="" height="" alt="Иконка viber">
+                  <a class="social__img-wrapper" href="#" rel="nofollow" target="_blank">
+                    <img class="social__img" src="img/icon/viber-social.svg" width="27" height="30" alt="Иконка viber">
+                  </a>
                 </li>
               </ul>
+              </div>
+              <a class="button button__main button__main--contacts" href="#">Проложить маршрут</a>
             </div>
-            <a class="button__main" href="#">проложить маршрут</a>
           </div>
         </div>
       </section>
@@ -732,6 +751,7 @@
       </button>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/map.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="lettering.js-master/jquery.lettering.js"></script>
   <script src="js/lettering.js"></script>
