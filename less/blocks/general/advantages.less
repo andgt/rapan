@@ -1,5 +1,9 @@
 .advantages {
   margin-bottom: 60px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__list {
@@ -33,7 +37,7 @@
 
 .advantages__card {
   max-width: 280px;
-  .offset(0 auto; 0 20px 22px 20px);
+  .offset(0 auto; 0 15px 22px 15px);
   background-color: @grey2;
   box-shadow: 0 15px 25px 0 @grey3;
   border-radius: 8px;
@@ -63,7 +67,7 @@
   top: -15px;
   width: 155px;
   height: 155px;
-  margin: 0 auto 18px auto;
+  margin: 0 auto 4px auto;
   background-color: @white;
   border-radius: 50%;
 }
@@ -87,7 +91,7 @@
 }
 
 .advantages__title {
-  .offset(0 0 19px 0; 0);
+  .offset(0 0 10px 0; 0);
   .typography(20px; 26px);
   color: @white;
   text-align: center;

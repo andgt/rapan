@@ -641,7 +641,7 @@ a {
   background-repeat: no-repeat;
   background-size: 35px 35px;
   background-position: center center;
-  background-color: #28292d;
+  background-color: #6dad65;
   box-shadow: 0 2px 6px #4d661a;
   cursor: pointer;
   transition: 0.3s linear;
@@ -1058,6 +1058,11 @@ a {
 .advantages {
   margin-bottom: 60px;
 }
+@media (min-width: 1400px) {
+  .advantages {
+    margin-bottom: 0;
+  }
+}
 .advantages__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
@@ -1091,7 +1096,7 @@ a {
 .advantages__card {
   max-width: 280px;
   margin: 0 auto;
-  padding: 0 20px 22px 20px;
+  padding: 0 15px 22px 15px;
   background-color: #8f939e;
   box-shadow: 0 15px 25px 0 rgba(40, 41, 45, 0.25);
   border-radius: 8px;
@@ -1119,7 +1124,7 @@ a {
   top: -15px;
   width: 155px;
   height: 155px;
-  margin: 0 auto 18px auto;
+  margin: 0 auto 4px auto;
   background-color: #ffffff;
   border-radius: 50%;
 }
@@ -1141,7 +1146,7 @@ a {
   border-radius: 6px;
 }
 .advantages__title {
-  margin: 0 0 19px 0;
+  margin: 0 0 10px 0;
   padding: 0;
   font-size: 20px;
   line-height: 26px;
@@ -1966,7 +1971,14 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
 }
 @media (min-width: 768px) {
   .promo {
-    padding-top: 171px;
+    padding-top: 85px;
+  }
+}
+@media (min-width: 1400px) {
+  .promo {
+    padding-top: 117px;
+    height: 100vh;
+    min-width: 768px;
   }
 }
 .promo__text-wrapper {
@@ -2024,6 +2036,8 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
   .promo__delivery {
     top: 144px;
     right: 30px;
+    height: 815px;
+    padding: 0;
     background-image: url("../img/desktop/plate-promo.png");
     background-size: 771px 815px;
   }
