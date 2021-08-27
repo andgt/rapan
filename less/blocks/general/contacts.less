@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr;
   .offset(0; 40px 0);
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .contacts__map {
@@ -11,6 +15,10 @@
 
   @media (min-width: @tablet-width) {
     height: 700px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 

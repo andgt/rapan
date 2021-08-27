@@ -30,6 +30,23 @@ let menuFixed = function() {
   }
 };
 
+// Кнопка наверх
+
+let scrollUpButton = function () {
+  let scrollUp = document.querySelector(".button__scroll-up");
+
+  if (window.pageYOffset > 100) {
+    scrollUp.classList.add("button__scroll-up--showed");
+  } else {
+    scrollUp.classList.remove("button__scroll-up--showed");
+  }
+
+  scrollUp.onclick = function (evt) {
+    window.scrollTo(0, 0);
+  };
+};
+
 window.onscroll = function() {
   menuFixed();
+  scrollUpButton();
 };
