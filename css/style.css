@@ -1933,7 +1933,7 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
   .contacts__footer {
     flex-direction: column;
     justify-content: normal;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 .social {
@@ -2673,7 +2673,7 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
   .events::before {
     content: "";
     position: absolute;
-    top: 281px;
+    top: 211px;
     right: 0;
     width: 964px;
     height: 777px;
@@ -2782,7 +2782,7 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
 @media (min-width: 1850px) {
   .gallery-social__picture-container {
     position: absolute;
-    top: -173px;
+    top: -133px;
     left: -3px;
     width: 1146px;
     height: 1010px;
