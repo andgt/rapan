@@ -1713,13 +1713,8 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
 }
 @media (min-width: 1400px) {
   .slider__card-wrapper {
-    width: 370px;
-    height: 555px;
-  }
-}
-@media (min-width: 1400px) {
-  .slider__card.slick-center .slider__card-wrapper {
     width: 555px;
+    height: 457px;
   }
 }
 .slider__card-img {
