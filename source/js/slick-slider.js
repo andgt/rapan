@@ -14,6 +14,10 @@ $(document).ready(function() {
   });
 });
 
+$(".slider__card-gallery").on("afterChange", function(event, slick, currentSlide, nextSlide){
+  $(".slider__current-count").text(currentSlide + 1);
+});
+
 $('.menu__gallery').slick({
   mobileFirst: true,
   responsive: [
