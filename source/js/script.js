@@ -46,11 +46,6 @@ let scrollUpButton = function () {
   };
 };
 
-window.onscroll = function() {
-  menuFixed();
-  scrollUpButton();
-};
-
 // Табы меню
 
   let tabMenu = function() {
@@ -173,3 +168,9 @@ let modal = function () {
 };
 
 modal();
+
+
+window.onscroll = function() {
+  menuFixed();
+  scrollUpButton();
+};
