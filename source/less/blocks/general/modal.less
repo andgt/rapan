@@ -1,0 +1,103 @@
+.modal-overlay {
+  display: none;
+}
+
+.modal-overlay__open {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  .offset(0; 0);
+  z-index: 6000;
+  background: @green6;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px 22px 39px 26px;
+  color: @black;
+  background-color: @white;
+  border-radius: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    width: 134px;
+    height: 35px;
+    background: rgba(104, 99, 95, 0.7);
+    filter: blur(40px);
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 434px;
+    padding: 30px 42px 59px 42px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 300px;
+  }
+}
+
+.modal__show {
+  display: block;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: -21px;
+  right: -5px;
+  width: 42px;
+  height: 42px;
+  .offset(0; 0);
+  background-color: @green2;
+  border: 1px solid @green4;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: @green4;
+  }
+
+  @media (min-width: @tablet-width) {
+    right: -21px;
+  }
+}
+
+.modal__btn-close::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 9px;
+  width: 22px;
+  height: 2px;
+  background-color: @white;
+  transform: rotate(45deg);
+}
+
+.modal__btn-close::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 9px;
+  width: 22px;
+  height: 2px;
+  background-color: @white;
+  transform: rotate(-45deg);
+}

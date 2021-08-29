@@ -1248,7 +1248,7 @@
                   <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
                     <span class="wpcf7-list-item">
                       <label>
-                        <input type="checkbox" name="accept" value="Я даю согласие на обработку персональных данных" checked="checked">
+                        <input type="checkbox" name="accept" value="Согласие на обработку персональных данных" checked="checked">
                         <span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span>
                       </label>
                     </span>
@@ -1559,6 +1559,43 @@
         <span class="visually-hidden">Перейти в начало страницы</span>
       </button>
   </footer>
+  <div class="modal__overlay">
+    <div class="form modal wpcf7 js-back-call">
+      <form class="wpcf7-form modal__form--backcall">
+        <p class="form__title form__title--modal">Заказать звонок</p>
+        <button class="modal__btn-close js-button-close" type="button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <div class="form__item">
+          <span class="wpcf7-form-control-wrap your-name text-input">
+            <input class="wpcf7-form-control wpcf7-text wpcf7-name modal__form-input--username form__input form__input--modal" type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Имя">
+          </span>
+        </div>
+        <div class="form__item">
+          <span class="wpcf7-form-control-wrap your-tel text-input">
+            <input class="wpcf7-form-control wpcf7-text wpcf7-tel form__input form__input--phone form__input--modal" type="tel" name="your-tel" value="" size="40" aria-required="true" aria-invalid="false" placeholder="+7 (___) ___-__-__">
+          </span>
+        </div>
+        <div class="form__item form__item--submit">
+          <div class="btn__wrap btn__wrap--grad">
+            <input class="wpcf7-form-control wpcf7-submit xbtn xbtn--grad button form__modal-submit" type="submit" value="Перезвоните мне">
+          </div>
+        </div>
+        <div class="form__inner form__inner--policy">
+                <span class="wpcf7-form-control-wrap accept">
+                  <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input type="checkbox" name="accept" value="Согласие на обработку персональных данных" checked="checked">
+                        <span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+      </form>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/mask.js"></script>
