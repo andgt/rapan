@@ -2126,7 +2126,7 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
   .promo {
     padding-top: 117px;
     height: 100vh;
-    min-width: 768px;
+    min-height: 881px;
   }
 }
 .promo__text-wrapper {
