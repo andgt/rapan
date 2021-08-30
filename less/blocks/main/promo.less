@@ -21,13 +21,18 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 10px;
-  row-gap: 20px;
-  margin-bottom: 35px;
+  row-gap: 10px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     justify-content: normal;
     align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width-large) {
+    row-gap: 20px;
+    margin-bottom: 35px;
   }
 }
 
@@ -40,6 +45,10 @@
 
   @media (min-width: @desktop-width) {
     width: 487px;
+    .typography(18px; 24px);
+  }
+
+  @media (min-width: @desktop-width-large) {
     .typography(20px; 26px);
   }
 }
@@ -66,6 +75,10 @@
     height: 815px;
     padding: 0;
     background-image: url("../img/desktop/plate-promo.png");
+    background-size: 597px 634px;
+  }
+
+  @media (min-width: @desktop-width-large) {
     background-size: 771px 815px;
   }
 }
