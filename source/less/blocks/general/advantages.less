@@ -65,11 +65,16 @@
   display: flex;
   justify-content: center;
   top: -15px;
-  width: 155px;
-  height: 155px;
+  width: 130px;
+  height: 130px;
   margin: 0 auto 4px auto;
   background-color: @white;
   border-radius: 50%;
+
+  @media (min-width: @desktop-width-large) {
+    width: 155px;
+    height: 155px;
+  }
 }
 
 .advantages__img-wrapper--events {
@@ -92,15 +97,23 @@
 
 .advantages__title {
   .offset(0 0 10px 0; 0);
-  .typography(20px; 26px);
+  .typography(16px; 20px);
   color: @white;
   text-align: center;
+
+  @media (min-width: @desktop-width-large) {
+    .typography(20px; 26px);
+  }
 }
 
 .advantages__description {
   .offset(0; 0);
-  .typography(14px; 20px);
+  .typography(13px; 18px);
   color: @white;
+
+  @media (min-width: @desktop-width-large) {
+    .typography(14px; 20px);
+  }
 }
 
 .advantages__description--events {

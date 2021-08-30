@@ -30,16 +30,20 @@
   flex-direction: column;
   gap: 20px;
   max-width: 420px;
-  margin: 0 auto 66px auto;
+  margin: 0 auto 36px auto;
 
   @media (min-width: @tablet-width) {
     max-width: 300px;
-    margin: 0 0 66px 0;
+    margin: 0 0 36px 0;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     max-width: 467px;
+  }
+
+  @media (min-width: @desktop-width-large) {
+    margin-bottom: 66px;
   }
 }
 
@@ -164,6 +168,15 @@
   &::before {
     box-shadow: 0 0 0 16px @green6,
       0 0 0 23px @white;
+  }
+}
+
+.button__delivery--info {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    top: -139px;
   }
 }
 

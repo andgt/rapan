@@ -169,7 +169,6 @@ let modal = function () {
 
 modal();
 
-
 window.onscroll = function() {
   menuFixed();
   scrollUpButton();
